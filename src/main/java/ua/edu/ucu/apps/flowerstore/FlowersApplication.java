@@ -4,11 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FlowerstoreApplication {
+public class FlowersApplication {
 
 	public static void main(String[] args)
 	{
-		SpringApplication.run(FlowerstoreApplication.class, args);
+		SpringApplication.run(FlowersApplication.class, args);
 	}
 
 }
