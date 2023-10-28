@@ -7,9 +7,9 @@ import lombok.Setter;
 @Setter
 public class Flower {
     private double price;
-    private FlowerType flowerType;
-    private FlowerColor color;
     private double sepalLength;
+    private FlowerColor color;
+    private FlowerType flowerType;
 
     public Flower(Flower flower) {
         this.price = flower.price;
@@ -22,7 +22,11 @@ public class Flower {
 
     }
 
-    public Flower(int i, double v, FlowerColor flowerColor, FlowerType flowerType) {
+    public Flower(int i, double v, FlowerColor flowerColor, FlowerType flower_type) {
+        price = i;
+        flowerType = flower_type;
+        color = flowerColor;
+        sepalLength = v;
     }
 
     public String getColor() {
